@@ -103,9 +103,9 @@ ggplot(data = mpg) +
   facet_wrap(~ class, nrow = 1)
 
 #trying out the facet wrap for other variables 
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_wrap(~ drv, nrow = 2)
+  ggplot(data = mpg) + 
+    geom_point(mapping = aes(x = displ, y = hwy)) + 
+    facet_wrap(~ drv, nrow = 2)
 #the variable that we pass to the the formula in facet wrap shoukd be discrete or catergorical.
 
 #using facet on your plot that has more thanb 2 variables
